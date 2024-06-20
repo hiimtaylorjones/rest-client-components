@@ -112,7 +112,7 @@ module RestClient
         "QUERY_STRING" => uri.query || "",
         "SERVER_NAME" => uri.host,
         "SERVER_PORT" => uri.port.to_s,
-        "rack.version" => ::Rack::VERSION,
+        "rack.version" => ::Rack.release,
         "rack.run_once" => false,
         "rack.multithread" => true,
         "rack.multiprocess" => true,
